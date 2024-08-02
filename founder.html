@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Founder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="School Logo">
+        </div>
+        <h1>About the Founder</h1>
+        <nav>
+            <a href="index.html" class="home-button">Home</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about-founder">
+            <img src="founder.png" alt="Founder Image" class="founder-img">
+            <p>
+                Our founder's journey is a testament to resilience and dedication. With a degree in English and a Masters in Economics, he overcame the hardships of poverty in his village. His determination led him to Urban Bareilly, 243001, where he established a learning institute dedicated to assisting underprivileged students. His vision was to provide a platform for those in need to access quality education and support their learning journey. His efforts have profoundly impacted countless lives, offering hope and opportunities to those who might otherwise have been left behind.
+            </p>
+        </section>
+    </main>
+    <footer id="footer">
+      <p>&copy; 2024 Gyan Deep Montessori School</p>
+  </footer>
+  <script>
+    function checkFooterVisibility() {
+        const footer = document.getElementById('footer');
+        const scrollableHeight = document.documentElement.scrollHeight;
+        const viewportHeight = window.innerHeight;
+        const scrollPosition = window.scrollY + viewportHeight;
+
+        if (scrollableHeight <= scrollPosition + 10) {
+            footer.classList.add('visible');
+        } else {
+            footer.classList.remove('visible');
+        }
+    }
+
+    document.addEventListener('scroll', checkFooterVisibility);
+    window.addEventListener('resize', checkFooterVisibility); // Ensure visibility on resize
+    checkFooterVisibility(); // Initial check in case page is already scrolled
+</script>
+</body>
+</html>

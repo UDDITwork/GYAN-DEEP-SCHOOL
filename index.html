@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyan Deep Montessori School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="School Logo">
+        </div>
+        <h1>Gyan Deep Montessori School</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Image Gallery</a></li>
+                <li><a href="founder.html">About Founder</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <img src="https://media.collegedekho.com/media/img/news/School_Assembly_News_Headlines_for_2_July_2024_1.png?height=310&width=615" alt="School Assembly">
+        <p>Founded in the year 1992 by Late Shri. Ramesh Chandra Saxena, Gyan Deep Montessori School offers classes from LKG and UKG to Class 9. Our mission is to provide a strong educational foundation for young minds.</p>
+    </section>
+    <!-- About Founder Section -->
+    <section id="about-founder">
+        <h2>About Founder</h2>
+        <a href="founder.html">
+            <img src="founder.png" alt="Founder Logo" class="founder-img">
+            <p>Click here to learn more about the founder.</p>
+        </a>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: 7456886877</p>
+        <p>Email: <a href="mailto:udditkantsinha@gmail.com">udditkantsinha@gmail.com</a>, <a href="mailto:udditkantsinha2@gmail.com">udditkantsinha2@gmail.com</a></p>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Image Gallery</h2>
+        <img src="https://www.sageschool.edu.in/gallery/photo654dc28c67b40.jpg" alt="Gallery Image 1">
+        <img src="https://www.tps.edu.in/images/gallery/2.jpg" alt="Gallery Image 2">
+        <img src="https://rnsischool.edu.in/wp-content/uploads/2023/06/primary.jpg" alt="Gallery Image 3">
+    </section>
+    <section class="address">
+        <h2>Our Address</h2>
+        <p>347, Anupam Nagar, Subhash Nagar, Bareilly, Uttar Pradesh 243001</p>
+        <div class="map">
+            <iframe src="https://maps.google.com/maps?q=347,%20Anupam%20Nagar,%20Subhash%20Nagar,%20Bareilly,%20Uttar%20Pradesh%20243001&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>&copy; 2024 Gyan Deep Montessori School</p>
+    </footer>
+    <script>
+        document.addEventListener('scroll', function() {
+            const footer = document.getElementById('footer');
+            const scrollableHeight = document.documentElement.scrollHeight;
+            const viewportHeight = window.innerHeight;
+            const scrollPosition = window.scrollY;
+
+            if (scrollableHeight <= viewportHeight + scrollPosition + 10) {
+                footer.classList.add('visible');
+            } else {
+                footer.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

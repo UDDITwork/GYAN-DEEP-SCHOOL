@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a, .home-button {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+nav ul li a:hover, .home-button:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+.about, .contact, .gallery, .address, #about-founder {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #007bff;
+}
+
+.about img, .gallery img, #about-founder img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.founder-img {
+    max-width: 150px; /* Adjust size as needed */
+    margin: 0 auto;
+    display: block;
+}
+
+.map {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Existing CSS code... */
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #343a40;
+    color: white;
+    position: fixed;
+    bottom: -60px; /* Hidden below the viewport */
+    width: 100%;
+    transition: bottom 0.3s ease-in-out; /* Smooth transition for appearing */
+    z-index: 1000; /* Ensure footer is on top */
+}
+
+footer.visible {
+    bottom: 0; /* Visible when scrolled to the bottom */
+}
+/* Existing CSS code... */
+
+#about-founder {
+    text-align: center;
+    padding: 20px;
+}
+
+.founder-image {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto 10px;
+    display: block; /* Center the image */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* Ensure the content is vertically centered */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #343a40;
+    color: white;
+    position: fixed;
+    bottom: -60px; /* Hidden below the viewport */
+    width: 100%;
+    transition: bottom 0.3s ease-in-out; /* Smooth transition for appearing */
+    z-index: 1000; /* Ensure footer is on top */
+}
+
+footer.visible {
+    bottom: 0; /* Visible when scrolled to the bottom */
+}
+
